@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+
+</head>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$(".row").click(function(){
+
+		window.location.href = 'http://127.0.0.1:1337/findArticle?search='+$(this).attr("id");
+	});
+
+});
+
+</script>
+
+
+
+<body>
+
+<h1>Free Board</h1>
+
+<div id="container" style="width:60%">
+{{nodecontent}}
+</div>
+
+
+</body>
+
+</html>
