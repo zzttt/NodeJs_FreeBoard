@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 var path = require("path");
 var DataController = require('./datacontroller').DataController;
-var DataController = new DataController('127.0.0.1', 27017);
+var DataController = new DataController('211.189.20.75', 27017);
 var fs = require('fs');
 
 http.createServer(function(req, res) {
@@ -136,4 +136,4 @@ http.createServer(function(req, res) {
   }
 
 
-}).listen(1337, '127.0.0.1');
+}).listen(1337, '211.189.20.75');
